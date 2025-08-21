@@ -110,7 +110,7 @@
             text-align: left;
             margin-top: 0px;
             background:
-                        url('images/image2.jpg') center/cover fixed;  
+                        url('../../homepage/images/image2.jpg') center/cover fixed;  
            padding: 0 8%;
             position: relative;
         
@@ -1252,7 +1252,7 @@
         /* Enroll Now Section */
         .enroll-now {
             height: 30vh;
-            background: url("D:\pexels-pixabay-267885.jpg") no-repeat center center/cover;
+            background: url("../../homepage/images/bigpic.jpg") no-repeat center center/cover;
             background-color: #004080;
             display: flex;
             justify-content: center;
@@ -1634,3 +1634,4 @@ section:last-of-type {
     font-size: 2rem;
   }
 }
+
