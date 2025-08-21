@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News and Events | Shree Gyanodaya English School</title>
+  <link rel="stylesheet" href="news-events.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+<body>
+    <div class="top-contact-bar">
+        <div class="top-contact-line">
+          <span><i class="fas fa-envelope"></i> info@gyanodaya.edu.np</span>
+          <span><i class="fas fa-phone"></i> +977-123456789</span>
+          <span><i class="fas fa-location-dot"></i> Bahuni, Morang, Nepal</span>
+        </div>
+      </div>
+      
+        <header>
+            <div class="logo">
+                <img src="D:\\att.IsENyCbACvruWiSMUlbjtzI-m6HokQ0iAzmt6hEDbZA__4_-removebg-preview.png" alt="Shree Gyanodaya Logo">
+            </div>
+            <nav class="navbar">
+              <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+              <ul id="navLinks">
+                    <li><a href="../homepage/index.html">Home</a></li> 
+                    <li><a href="../homepage/index.html"></section>programme</a></li>
+                    <li><a href="../news-events/ and events.html">News and Events</a></li>
+                    <li><a href="#contact-us"></section>About Us</a></li>
+                     <!-- Mobile-only buttons -->
+                <li class="mobile-buttons-container">
+                  <a href="#" class="mobile-btn admission" onclick="openForm()">Admission</a>
+                  <a href="#facilities" class="mobile-btn facilities">Our Facilities</a>
+                  <a href="news and events.html" class="mobile-btn news">News & Events</a>
+              </li>
+                </ul>
+            </nav>
+        </header>
+
+<section class="calendar-section">
+  <h1>School Academic Calendar</h1>
+  <!-- GOOGLE Calendar Embed -->
+  <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendarlink&ctz=Asia%2FKathmandu"></iframe>
+</section>
+
+<section class="events-list-section">
+  <h2>Upcoming Events</h2>
+
+  <!-- Event 1 -->
+  <div class="event-card">
+    <div class="event-date">May 1, 2025<br><small>Thursday</small></div>
+    <div class="event-detail">
+      <h4>Labor Day Holiday</h4>
+      <p>School will remain closed in observance of International Workers' Day.</p>
+    </div>
+  </div>
+
+  <!-- Event 2 -->
+  <div class="event-card">
+    <div class="event-date">May 15, 2025<br><small>Wednesday</small></div>
+    <div class="event-detail">
+      <h4>Annual Sports Day</h4>
+      <p>Students are requested to wear their sports uniforms. Prizes will be distributed.</p>
+    </div>
+  </div>
+
+  <!-- Event 3 -->
+  <div class="event-card">
+    <div class="event-date">June 5, 2025<br><small>Thursday</small></div>
+    <div class="event-detail">
+      <h4>Environment Day Celebration</h4>
+      <p>Tree plantation program and awareness rally will be organized by Eco Club.</p>
+    </div>
+  </div>
+
+</section>
+    
+    <footer>
+      <!-- Footer Top -->
+      <div class="footer-header">
+        <img src="images/logo.png" alt="Gyanodaya Logo">
+        <h3>Shree Gyanodaya English School</h3>
+      </div>
+    
+      <!-- Footer Content Area -->
+      <div class="footer-content">
+        
+        <!-- Navigation Links -->
+        <div class="footer-box">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li> 
+                <li><a href="#programme"></section>programme</a></li>
+                <li><a href="news and events.html">News and Events</a></li>
+                <li><a href="#contact-us-section">About Us</a></li>
+            
+            
+          </ul>
+        </div>
+    
+        <!-- Contact Info -->
+        <div class="footer-box">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Bahuni, Morang, Nepal</li>
+            <li><i class="fas fa-envelope"></i> info@gyanodaya.edu.np</li>
+            <li><i class="fas fa-phone"></i> +977-123456789</li>
+          </ul>
+        </div>
+    
+        <!-- Google Map -->
+        <div class="footer-box map-box">
+          <h4>Find Us</h4>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6184078689155!2d87.5191781753491!3d26.6580789767937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef74828dd5f7ff%3A0x7d6a9dc12e7392b1!2sBahuni%2C%20Morang!5e0!3m2!1sen!2snp!4v1713447402611!5m2!1sen!2snp" 
+            width="100%" 
+            height="180" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+    
+      </div>
+    
+      <!-- Footer Bottom -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100063790039958"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    
+      <div class="footer-bottom">
+        &copy; 2024 Shree Gyanodaya English School. All rights reserved.
+      </div>
+    </footer>
+    <script src="news-events.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Fetch events using AJAX
+    $.ajax({
+    url: 'fetch_events.php', // PHP file that fetches the data
+    method: 'GET',
+    dataType: 'json',
+    success: function(data) {
+        // Loop through the events and create HTML elements
+        data.forEach(event => {
+            const start_date = new Date(event.start_date);
+            const end_date = new Date(event.end_date);
+            
+            // Format for the event box
+            const eventBox = `
+                <div class="info-box event-box" style="background-image: url('../../uploads/${event.image}');">
+                    <div class="info-desc-cont event-desc">
+                        <div class="info-title">${event.title}</div>
+                        <div class="info-date">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>${formatDate(start_date)} to ${formatDate(end_date)}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            $('.news-events-wrapper').append(eventBox);
+        });
+    }
+});
+
+
+    // Function to format the date (adjust based on how you want to display it)
+    function formatDate(date) {
+        const year = date.getFullYear();
+        const month = ("0" + (date.getMonth() + 1)).slice(-2);
+        const day = ("0" + date.getDate()).slice(-2);
+        return `${year}-${month}-${day}`;
+    }
+});
+</script>
+
+
+</body>
+</html>

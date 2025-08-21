@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Top Contact */
+.top-contact-bar {
+  background: #004080;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: #f39c12;
+  transition: 0.3s;
+}
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/school-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.hero-btn, .notice-button, .see-more-btn {
+  background: linear-gradient(45deg, #004080, #1e90ff);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+.hero-btn:hover {
+  background: linear-gradient(45deg, #f39c12, #e67e22);
+}
+
+/* Cards */
+.info-box, .feature-card, .guideline-card, .programme-card-slide {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.info-box:hover, .feature-card:hover, .guideline-card:hover, .programme-card-slide:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 50px 0 20px;
+  color: #004080;
+}
+
+/* Footer */
+footer {
+  background: #004080;
+  color: #fff;
+  padding: 30px 20px;
+}
+.footer-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-box {
+  flex: 1;
+  margin: 10px;
+}
+.footer-box h4 {
+  margin-bottom: 10px;
+}
+.footer-box ul {
+  list-style: none;
+}
+.footer-box ul li {
+  margin: 5px 0;
+}
+.footer-box ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 15px;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #f39c12;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
