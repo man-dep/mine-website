@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Gyanodaya English School</title>
+    <link rel="stylesheet" href="../gyanodaya-visitors/homepage/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+
+  <div class="top-contact-bar">
+    <div class="top-contact-line">
+      <span><i class="fas fa-envelope"></i> info@gyanodaya.edu.np</span>
+      <span><i class="fas fa-phone"></i> +977-123456789</span>
+      <span><i class="fas fa-location-dot"></i> Bahuni, Morang, Nepal</span>
+    </div>
+  </div>
+  
+    <header>
+      <div class="logo-name">
+        <div class="logo">
+            <img src="../gyanodaya-visitors/homepage/images/logo.png" alt="Shree Gyanodaya Logo">
+            </div>
+         <div class="head-name">
+         <p>Shree Gyanodaya<br>belbari-7 Bahuni</p>
+         </div>
+        </div>
+       
+        <nav class="navbar">
+          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        
+         <ul id="navLinks">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="#programme"></section>programme</a></li>
+                <li><a href="../news-events/news and events.html">News and Events</a></li>
+                <li><a href="#contact-us"></section>About Us</a></li>
+                 <!-- Mobile-only buttons -->
+               <li class="mobile-buttons-container">
+               <a href="#" class="hero-btn join" onclick="openForm()">Admission</a>
+               <a href="../../results/result.html" class="mobile-btn results">check results</a>
+               <a href="../../notices/notices.html" class="mobile-btn news">Notices</a>
+          </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome <br>to<br> Shree Gyanodaya</h1>
+            <p class="hero-subtitle">Empowering minds, igniting futures</p>
+        
+            <div class="hero-social">
+                 <p2>Visit us on</p2>  
+            <a href="https://www.facebook.com/profile.php?id=100063790039958"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hero-btn join" onclick="openForm()">Join Us</a>
+            </div>
+            <div class="mobile-notice">
+              <div class="notice-icon">📢</div>
+              <h3>Admissions Open!</h3>
+              <p>Explore our facilities and latest events</p>
+              <a href="../../notices/notices.html" class="notice-button">View Details</a>
+          </div>
+
+
+            <section class="info-section">
+            
+              <div class="info-box">
+                <div class="icon"><i class="fa-solid fa-square-poll-vertical"></i></i></div>
+                <h3>check results</h3>
+                <p>check your results by clicking this button.</p>
+                <p><a href="../../results/result.html" class="notice-button">View Results</a></p>
+              </div>
+              <div class="info-box orange">
+                <div class="icon"><i class="fas fa-clipboard-check"></i></div>
+                <h3>Admissions</h3>
+                <p>you can join to gyanodaya family by clicking this button.</p>
+                <a href="#" class="notice-button" onclick="openForm()">Enroll now</a>
+              </div>
+             <div class="info-box dark">
+  <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+  <h3>Recent Notice</h3>
+  <p>New updates, alerts, and academic notices.</p>
+  <p><a href="../../notices/notices.html" class="notice-button">View Notice</a></p>
+</div>
+
+            </section>
+            
+          </div>
+    </div>
+  
+    <!-- Features Section Start -->
+    <section class="features-section" id="features">
+    <h2 class="section-title">Our Features</h2>
+  
+    <div class="features-slider-wrapper">
+      <button class="arrow left" onclick="scrollFeatureLeft()"><i class="fas fa-chevron-left"></i></button>
+  
+      <div class="features-slider" id="featuresSlider">
+  
+        <div class="feature-card">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Experienced Teachers</h3>
+          <p>Our qualified teachers inspire students to reach their full potential.Our school is proud to have a team of highly experienced and dedicated teachers. With years of teaching practice, they bring deep subject knowledge, effective classroom management, and modern teaching techniques. Their guidance not only helps students excel academically but also supports personal growth and character development.</p>
+        </div>
+  
+        <div class="feature-card">
+          <i class="fas fa-book-reader"></i>
+          <h3>Quality Education</h3>
+          <p>We offer a balanced curriculum focusing on both academics and values.</p>
+        </div>
+  
+        <div class="feature-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Scholarship Facility</h3>
+          <p>Deserving students are awarded scholarships every year.</p>
+        </div>
+  
+        <div class="feature-card">
+          <i class="fas fa-school"></i>
+          <h3>Modern Infrastructure</h3>
+          <p>Well-equipped classrooms, science labs, and libraries are available.</p>
+        </div>
+  
+        <div class="feature-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Extra-Curricular Activities</h3>
+          <p>We believe in all-round development through arts, sports, and more.</p>
+        </div>
+       
+      </div>
+      
+      <button class="arrow right" onclick="scrollFeatureRight()"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="nav-dots" id="nav-Dots-features"></div>
+    </div>
+   
+    </section> 
+    <!-- Features Section End -->
+    
+    <section class="guidelines-section">
+      <h2 class="section-title">Guidelines</h2>
+      <div class="guidelines-slider-container">
+        <div class="guidelines-slider" id="guidelinesSlider">
+          <div class="guideline-card">
+            <h2>Parental Guidelines</h2>
+            <ul>
+              <li>Homework check: See if the kids have completed their homework.</li>
+              <li>Educational materials: Ensure proper school supplies.</li>
+              <li>Uniform maintenance: Keep uniforms clean and tidy.</li>
+            </ul>
+          </div>
+    
+          <div class="guideline-card">
+            <h2>Student Guidelines</h2>
+            <ul>
+              <li>Regular attendance and punctuality</li>
+              <li>Respect for teachers and classmates</li>
+              <li>Participation in extracurricular activities</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Dot Navigation -->
+        <div class="nav-dots" id="nav-Dots-guideline"></div>
+      </div>
+    </section>
+    
+    
+  
+    <!-- <section class="vision">
+        <div>
+         <div> <h2>Our Vision</h2></div>  
+            <p>At Shree Gyanodaya English School, we envision a world where every student is empowered with knowledge, skills, and values to lead and innovate. Our mission is to nurture critical thinkers, compassionate leaders, and lifelong learners who contribute positively to society.</p>
+        </div>
+    </section>
+
+    <section class="vision">
+        <div>
+            <p>To create a nurturing educational environment where students are inspired to achieve academic excellence, develop strong moral character, and become lifelong learners prepared to succeed in a global society.</p>
+        </div>
+    </section> -->
+
+    <section class="video-section" id="life">
+        <h1 class="section-title">Life at Gyanodaya School</h1></u>
+        
+        <div class="video-slider-wrapper">
+          <button class="arrow left" onclick="scrollVideoLeft()"><i class="fas fa-chevron-left"></i></button>
+          
+          <div class="video-slider" id="videoSlider">
+            <div class="video-card">
+              <video  controls loop muted autoplay>
+                <source src="videos/video1.mp4"  type="video/mp4" >
+              </video>
+            </div>
+      
+            <div class="video-card">
+              <video controls loop muted autoplay>
+                <source src="videos/video2.mp4" type="video/mp4">
+              </video>
+            </div>
+      
+            <div class="video-card">
+              <video controls loop muted autoplay>
+                <source src="videos/video3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <button class="arrow right" onclick="scrollVideoRight()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="nav-dots" id="nav-Dots-video"></div>
+      </div>
+      </section>
+      
+    
+  <section class="message-section">
+    <h2 class="section-title">Leadership Message</h2>
+    <div class="message-slider-wrapper">
+      
+        
+        <div class="message-slider" id="teacherSlider">
+            <!-- Principal Card -->
+            <div class="message-card">
+                <div class="profile-image">
+                    <img src="../../homepage/images/teachers5.jpg" alt="Principal">
+                </div>
+                <div class="message-content">
+                    <div class="leader-info">
+                        <h3>Prem Tamang</h3>
+                        <div class="position">Principal</div>
+                    </div>
+                    <p class="message-text">
+                        "Dear Students, Parents, and Well-Wishers,
+
+It gives me immense pleasure to welcome you all to Gyanodaya English School. Education, in my view, is not only about gaining knowledge but also about shaping character, building confidence, and preparing for life’s challenges. At our school, we are deeply committed to nurturing young minds with discipline, values, and creativity.
+
+With the dedication of our experienced teachers, we strive to provide a learning environment where every child feels encouraged to explore, question, and discover. We believe that true education is a partnership between school, students, and parents. Therefore, your active involvement and continuous support play a vital role in shaping the future of our children.
+
+Our vision is to prepare students who are not only academically excellent but also socially responsible, morally strong, and globally competent. We aim to cultivate in them a sense of respect, responsibility, and resilience, so they can become confident individuals ready to face the future.
+
+As the Principal, I assure you that Gyanodaya English School will always remain a place where dreams are nurtured, talents are recognized, and every student is guided with care and dedication. Together, let us work to make education a journey of growth, wisdom, and success."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Vice Principal Card -->
+            <div class="message-card">
+                <div class="profile-image">
+                    <img src="../../homepage/images/teacher6.jpg" alt="Vice Principal">
+                </div>
+                <div class="message-content">
+                    <div class="leader-info">
+                        <h3>Sunil Dahal</h3>
+                        <div class="position">Vice Principal</div>
+                    </div>
+                    <p class="message-text">
+                  Dear Students, Parents, and Guardians,
+
+It is my privilege to extend my heartfelt greetings to you all. At Gyanodaya English School, we believe that education is a continuous journey of growth and discovery. As the Vice Principal, my role is to support our Principal, teachers, and students in ensuring that this journey is meaningful and fruitful for everyone.
+
+We live in a rapidly changing world where knowledge, skills, and values are equally important. Our school strives to provide students not only with strong academic foundations but also with opportunities to develop confidence, creativity, discipline, and leadership qualities. With the guidance of our dedicated and experienced teachers, we are committed to helping each child reach their highest potential.
+
+I strongly believe that true education is built upon cooperation between school, students, and parents. Together, we can nurture a generation that is knowledgeable, responsible, and compassionate. We encourage our students to dream big, work hard, and stay rooted in values while preparing themselves for the challenges of tomorrow.
+
+Let us join hands in creating a learning environment where every student feels inspired, motivated, and empowered to achieve excellence in both academics and life."
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+      
+    </div>
+
+    <div class="see-more-container">
+        <button class="see-more-btn" onclick="showMoreLeadership()">See More</button>
+    </div>
+</section>
+
+
+<!-- Programme Section Start -->
+<section class="programme-section" id="programme">
+    <h2>Our Programs</h2>
+  
+    <div class="programme-slider-wrapper">
+      <button class="arrow left" onclick="scrollProgrammeLeft()"><i class="fas fa-chevron-left"></i></button>
+  
+      <div class="programme-slider" id="programmeSlider">
+  
+        <!-- Card 1 -->
+        <div class="programme-card-slide">
+          <video src="videos/academic.mp4" controls></video>
+          <div class="programme-text">
+            <h3>Academic Excellence</h3>
+            <p>At Gyanodaya English School, we are committed to fostering academic excellence by combining quality teaching, innovative learning methods, and continuous evaluation. Our focus is not only on achieving high results but also on developing critical thinking, creativity, and problem-solving skills in students. </p>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="programme-card-slide">
+          <video src="videos/sports.mp4" controls></video>
+          <div class="programme-text">
+            <h3>Sports & Games</h3>
+            <p>We provide training and tournaments to build team spirit and physical fitness.</p>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="programme-card-slide">
+          <video src="videos/art.mp4" controls></video>
+          <div class="programme-text">
+            <h3>Creative Arts</h3>
+            <p>From dance to painting, students develop their talents beyond academics.</p>
+          </div>
+        </div>
+        </div>
+  
+      <button class="arrow right" onclick="scrollProgrammeRight()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="nav-dots" id="nav-Dots-programme"></div>
+  </div>
+  </section>
+  <div id="overlay" onclick="openForm()"></div>
+<div class="join-form-popup" id="joinForm">
+  <h2>New Admission Form</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="number" placeholder="Age" required>
+    <label>Gender:</label>
+    <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+    <select required>
+      <option value="">Select Grade</option>
+      <option>Nursery</option>
+      <option>LKG</option>
+      <option>UKG</option>
+      <option>Grade 1</option>
+      <option>Grade 2</option>
+      <option>Grade 3</option>
+      <option>Grade 4</option>
+      <option>Grade 5</option>
+      <option>Grade 6</option>
+      <option>Grade 7</option>
+      <option>Grade 8</option>
+      <option>Grade 9</option>
+      <option>Grade 10</option>
+    </select>
+    <label>Father's Name:</label>
+    <input type="text" name="father_name" required><br>
+
+    <label>Mother's Name:</label>
+    <input type="text" name="mother_name" required><br>
+
+    <label>Contact:</label>
+    <input type="text" name="contact" required><br>
+
+    <label>Address:</label>
+    <textarea name="address" required></textarea><br>
+
+    <button type="submit">Submit</button>
+    <button type="button" onclick="closeForm()">Cancel</button>
+  </form>
+</div>
+
+<section class="contact-us-section" id="contact-us">
+  <h2>Contact Us</h2>
+  <div class="contact-us-container">
+    
+    <!-- LEFT: Google Map + Contact Info -->
+    <div class="contact-map-info">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6184078689155!2d87.5191781753491!3d26.6580789767937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef74828dd5f7ff%3A0x7d6a9dc12e7392b1!2sBahuni%2C%20Morang!5e0!3m2!1sen!2snp!4v1713447402611!5m2!1sen!2snp" 
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <div class="school-contact-info">
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Bahuni, Morang, Province 1, Nepal</p>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@gyanodaya.edu.np</p>
+        <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +977-123456789 / 021-123456</p>
+        <p><a href="https://www.google.com/maps/dir//Bahuni,+Morang" target="_blank" style="color:#004080; font-weight:bold;">📍 Get Directions</a></p>
+      </div>
+    </div>
+
+    <!-- RIGHT: Contact Form -->
+    <form class="contact-form" onsubmit="submitMessage(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Your Grade (e.g., Grade 5)" required>
+      <textarea placeholder="Write your message..." rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+    <section class="enroll-now">
+        <h1>Enroll Now!</h1>
+        <a href="#" class="hero-btn join" onclick="openForm()">Apply Here</a>
+      
+    </section>
+    <footer>
+      <!-- Footer Top -->
+      <div class="footer-header">
+        <img src="../../homepage/images/logo.png" alt="Gyanodaya Logo">
+        <h3>Shree Gyanodaya English School</h3>
+      </div>
+    
+      <!-- Footer Content Area -->
+      <div class="footer-content">
+        
+        <!-- Navigation Links -->
+        <div class="footer-box">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li> 
+                <li><a href="#programme"></section>programme</a></li>
+                <li><a href="news and events.html">News and Events</a></li>
+                <li><a href="#contact-us-section">About Us</a></li>
+            
+            
+          </ul>
+        </div>
+    
+        <!-- Contact Info -->
+        <div class="footer-box">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Bahuni, Morang, Nepal</li>
+            <li><i class="fas fa-envelope"></i> info@gyanodaya.edu.np</li>
+            <li><i class="fas fa-phone"></i> +977-123456789</li>
+          </ul>
+        </div>
+    
+        <!-- Google Map -->
+        <div class="footer-box map-box">
+          <h4>Find Us</h4>
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.6184078689155!2d87.5191781753491!3d26.6580789767937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef74828dd5f7ff%3A0x7d6a9dc12e7392b1!2sBahuni%2C%20Morang!5e0!3m2!1sen!2snp!4v1713447402611!5m2!1sen!2snp" 
+            width="100%" 
+            height="180" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+    
+      </div>
+    
+      <!-- Footer Bottom -->
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100063790039958"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    
+      <div class="footer-bottom">
+        &copy; 2024 Shree Gyanodaya English School. All rights reserved.
+      </div>
+    </footer>
+    <script src="../homepage/homepage.js"></script>
+    <script>
+      function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  const toggleBtn = document.querySelector('.menu-toggle');
+  
+  nav.classList.toggle("active");
+  toggleBtn.classList.toggle("active");
+
+
+  document.addEventListener('click', function closeMenu(e) {
+    if(!e.target.closest('.navbar') && !e.target.closest('.menu-toggle')) {
+      nav.classList.remove("active");
+      toggleBtn.classList.remove("active");
+      document.removeEventListener('click', closeMenu);
+    }
+  });
+}   
+
+    </script>
+    <script>
+      
+        function openForm() {
+          document.getElementById("joinForm").style.display = "block";
+          document.getElementById("overlay").style.display = "block";
+        }
+      
+        function closeForm() {
+          document.getElementById("joinForm").style.display = "none";
+          document.getElementById("overlay").style.display = "none";
+        }
+     
+      
+    </script>
+    <script>
+document.getElementById("admissionForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch("admission/submit_admission.php", {
+    method: "POST",
+    body: formData
+  })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        document.getElementById("formStatus").innerHTML = "<span style='color:green;'>Submitted successfully!</span>";
+        form.reset();
+      } else {
+        document.getElementById("formStatus").innerHTML = "<span style='color:red;'>Error: " + data.error + "</span>";
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      document.getElementById("formStatus").innerHTML = "<span style='color:red;'>Submission failed.</span>";
+    });
+});
+</script>
+</body>
+
+</html>
+
+
